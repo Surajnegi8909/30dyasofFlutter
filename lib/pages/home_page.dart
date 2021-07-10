@@ -11,10 +11,14 @@ class Homepage extends StatelessWidget {
       appBar: AppBar(
         title: Text("Homepage"),
       ),
-      body: Center(
-        child: Container(
-          child: Text("Hello Suraj Negi, age is $age"),
-        ),
+      body: Column(
+        children: [
+          Text("Hello Suraj Negi, age is $age"),
+          SizedBox(
+            height: 100,
+          ),
+          ElevatedButton(onPressed: () {}, child: Text("Registration"))
+        ],
       ),
       drawer: Drawer(),
     );
